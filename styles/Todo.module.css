@@ -1,0 +1,32 @@
+.todo{
+    border: none;
+    width: 300px;
+    height: 180px;
+    border-radius: 10px;
+    padding: 5px 10px;
+    text-align: center;
+    font-size: 1.2rem;
+    word-wrap: break-word;
+    cursor: pointer;
+  
+}
+
+.todoPendente {
+    background-color: rgba(7,118,212, 0.8);
+}
+.todoFinalizado {
+    background-color: rgba(0,177,0,0.4);
+    text-decoration: line-through;
+}
+
+.todo button{
+    position: relative;
+    left: 45%;
+    border: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    cursor: pointer;
+    background: rgba(0,0, 0,0.5);
+    color: #fff;
+}

@@ -1,0 +1,19 @@
+.input {
+    display: grid;
+    place-items: center;
+    height: 10%;
+    padding: 10px 0px;
+}
+
+.input input{
+    height: 100%;
+    width: 70%;
+    border-style: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 1.5rem;
+    outline: none;
+    background: rgba(0,0,0, 0.2);
+    color: #fff;
+    text-align: center;
+}
