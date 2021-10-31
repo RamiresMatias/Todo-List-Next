@@ -1,6 +1,6 @@
 .input {
-    display: grid;
-    place-items: center;
+    display: flex;
+    justify-content: center;
     height: 10%;
     padding: 10px 0px;
 }
@@ -9,11 +9,29 @@
     height: 100%;
     width: 70%;
     border-style: none;
-    border-radius: 5px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
     padding: 5px 10px;
     font-size: 1.5rem;
     outline: none;
     background: rgba(0,0,0, 0.2);
     color: #fff;
     text-align: center;
+}
+
+.input button{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-size: 2rem;
+    margin: 0;
+    width: 50px;
+    border: none;
+}
+
+.input button:hover{
+    cursor: pointer;
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    transition: background ease-in-out 0.3s;
 }

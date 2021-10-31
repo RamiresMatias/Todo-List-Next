@@ -11,7 +11,8 @@ export default function Input(props: PropsTarefa){
     const [descricao, setDescricao] = useState('')
     
     function salvaTarefa(event: any){
-        if(event.key === 'Enter' && descricao.trim()) {
+        console.log(event);
+        if((event.key === 'Enter' || event.type === 'click') && descricao.trim()) {
             let todo = new TodoModel(false, descricao.trim())
             props.novaTarefa(todo)
             setDescricao('')
@@ -27,6 +28,7 @@ export default function Input(props: PropsTarefa){
                 placeholder="Insira uma tarefa" 
                 onChange={(e) => setDescricao(e.target.value)}
             />
+            <button onClick={salvaTarefa}>+</button>
         </div>
     )
 }
