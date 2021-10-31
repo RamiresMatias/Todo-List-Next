@@ -11,7 +11,6 @@ export default function Input(props: PropsTarefa){
     const [descricao, setDescricao] = useState('')
     
     function salvaTarefa(event: any){
-        console.log(event);
         if((event.key === 'Enter' || event.type === 'click') && descricao.trim()) {
             let todo = new TodoModel(false, descricao.trim())
             props.novaTarefa(todo)
